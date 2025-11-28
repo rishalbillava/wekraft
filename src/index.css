@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --bg-color: #f3f4f6;
+  --text-color: #1f2937;
+  --light-text: #6b7280;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo-area { margin-bottom: 1.5rem; }
+.sun-icon { font-size: 3rem; color: #f59e0b; margin-bottom: 0.5rem; }
+.logo-area h1 { font-size: 1.5rem; color: var(--text-color); margin: 0 0 0.5rem 0; font-weight: 700; }
+.logo-area h2 { font-size: 1rem; color: var(--light-text); margin: 0 0 1.5rem 0; font-weight: 500; }
+
+.login-header {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 0.5rem;
+}
+
+.form-group { margin-bottom: 1rem; text-align: left; }
+label { display: block; font-size: 0.875rem; color: var(--light-text); margin-bottom: 0.25rem; }
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.btn-access {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-access:hover { background-color: var(--secondary-color); }
+
+.footer-note {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.version-tag {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
