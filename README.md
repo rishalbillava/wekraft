@@ -1,29 +1,35 @@
-# Wekraft Solar website
+# Wekraft Solar — Next.js
 
-Responsive five-page website with Wekraft, Adani Solar and Deye branding, 3D card effects, searchable product catalogue and six warehouse locations.
+Responsive website built with Next.js App Router and React. Separate Home, About, Warehouses, Catalogue and Contact pages, logo-matched theme, 3D effects with reduced-motion support, searchable product catalogue and Adani PDF downloads. No prices displayed.
 
-## Pages
+## Run locally
 
-- `index.html` — Home
-- `about.html` — About Wekraft
-- `catalogue.html` — Product catalogue
-- `warehouses.html` — Warehouse network
-- `contact.html` — Contact details
+Requires Node.js 20.9 or newer.
 
-## Catalogue
+```sh
+npm ci
+npm run dev
+```
 
-Deye inverter and storage entries, global Deye inverter series, and Adani TOPCon modules. The Adani range contains 15 DCR models from the supplied datasheets and only 625, 630 and 635 Wp for non-DCR. No prices are displayed. Model details include source datasheet links where available.
+Open http://localhost:3000. For production:
 
-## Deploy to Vercel
+```sh
+npm run build
+npm start
+```
 
-Import this GitHub repository into Vercel and select the `wekraft-3d-vercel` branch. Framework preset: Other. No build command is needed. The included `vercel.json` serves the static files from the repository root.
+## Vercel
 
-This branch includes the complete ready-to-host static website. The earlier React/Vite source remains in repository history.
+Import `rishalbillava/wekraft`, select `wekraft-3d-vercel` as the production branch and select the **Next.js** framework preset. Root directory: repository root. Use default build and output settings. The existing ERP on `main` is preserved.
 
-## Local preview
+Legacy `.html` URLs redirect to the new routes.
 
-Run `python -m http.server 8080` in the project folder, then open `http://localhost:8080`.
+## Editing
 
-## Update content
+- `app/`: pages, metadata and styles.
+- `components/`: navigation, footer, 3D effects and catalogue.
+- `lib/products.js`: product data.
+- `public/assets/`: logos and images.
+- `public/datasheets/`: Adani PDFs.
 
-Edit the HTML files for page text, `catalog-data.js` for product entries, and the CSS files for styling. Logos and images are in `assets/`; manufacturer datasheets are in `datasheets/`.
+Contact links open phone/email apps. No customer data is stored.
