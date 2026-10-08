@@ -1,16 +1,29 @@
-# React + Vite
+# Wekraft Solar website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive five-page website with Wekraft, Adani Solar and Deye branding, 3D card effects, searchable product catalogue and six warehouse locations.
 
-Currently, two official plugins are available:
+## Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `index.html` — Home
+- `about.html` — About Wekraft
+- `catalogue.html` — Product catalogue
+- `warehouses.html` — Warehouse network
+- `contact.html` — Contact details
 
-## React Compiler
+## Catalogue
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Deye inverter and storage entries, global Deye inverter series, and Adani TOPCon modules. The Adani range contains 15 DCR models from the supplied datasheets and only 625, 630 and 635 Wp for non-DCR. No prices are displayed. Model details include source datasheet links where available.
 
-## Expanding the ESLint configuration
+## Deploy to Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Import this GitHub repository into Vercel and select the `wekraft-3d-vercel` branch. Framework preset: Other. No build command is needed. The included `vercel.json` serves the static files from the repository root.
+
+This branch includes the complete ready-to-host static website. The earlier React/Vite source remains in repository history.
+
+## Local preview
+
+Run `python -m http.server 8080` in the project folder, then open `http://localhost:8080`.
+
+## Update content
+
+Edit the HTML files for page text, `catalog-data.js` for product entries, and the CSS files for styling. Logos and images are in `assets/`; manufacturer datasheets are in `datasheets/`.
